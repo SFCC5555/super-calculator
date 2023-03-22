@@ -110,7 +110,7 @@ class App extends React.Component {
         alert('out of range')
         this.setState({screenContent:''})
 
-    }else if (/[^\=]/.test(c)){
+    }else if (/[^=]/.test(c)){
       this.setState(state=>({screenContent:state.screenContent+c}))
     } else {
       let result = operation(sC)

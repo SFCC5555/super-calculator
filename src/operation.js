@@ -9,21 +9,21 @@ function operation(exp) {
         return result
     }
 
-    if (!(/[\+\x\%\-]/.test(exp))) {
+    if (!(/[+x%-]/.test(exp))) {
         
         result=exp
         
         return result
     }
     
-    if (!(/^\d+(\.\d+)?([\+\x\%\-]\d+(\.\d+)?)+$/.test(exp))) {
+    if (!(/^\d+(\.\d+)?([+x%-]\d+(\.\d+)?)+$/.test(exp))) {
         result = 'SYNTAX ERROR'
         return result
     } else {
 
-        let numbersList = exp.split(/[\+\x\%\-]/);
+        let numbersList = exp.split(/[+x%-]/);
 
-        let operatorsList = exp.split(/[^\+\x\%\-]+/);
+        let operatorsList = exp.split(/[^+x%-]+/);
         operatorsList.pop();
         operatorsList.shift()
 
