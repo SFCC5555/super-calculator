@@ -1,0 +1,15 @@
+.screen {
+    width: calc(100% - 40px);
+    height: 60px;
+    background-color: rgb(155, 166, 108);
+    border-radius: 2.5px;
+    font-size: 3.3rem;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(26, 28, 50, 70%);
+    padding:0px 20px;
+    padding-top:15px;
+    text-align: right;
+    overflow: hidden;
+
+  }

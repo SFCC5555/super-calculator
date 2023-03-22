@@ -1,0 +1,73 @@
+.react {
+  text-align: center;
+  color:white;
+  display: flex;
+  align-items: center;
+  gap:2.5px;
+  position: absolute;
+  top:89%;
+  right: 10px;
+}
+
+.reactLogo {
+  height: 7.5vmin;
+  cursor: crosshair;
+}
+
+.react p {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.fireLogo {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-image: url(./images/freeCodeCampLogo.png);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  translate: -10px 15px;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 450px;
+  background-color: rgb(76, 75, 101);
+  cursor: crosshair;
+  padding: 50px 25px;
+  padding-bottom: 0px;
+  border-radius: 10px;
+  gap:20px;
+}
+
+.buttonSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap:15px 30px ;
+  cursor: pointer;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .reactLogo {
+    animation: reactLogo-spin infinite 45s linear;
+  }
+}
+
+@keyframes reactLogo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
